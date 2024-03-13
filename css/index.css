@@ -1,10 +1,10 @@
 #logo{
-    width: 100px;
+    width: 200px;
 }
 
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 .container{
     width: 80%;
@@ -15,27 +15,51 @@ header{
 }
 .estilo-menu{
     list-style: none;
-    text-decoration: none;
+    display: flex;  
 }
 .estilo-menu a{
     text-decoration: none;
-    margin: 10px;
     display: block;
+    margin: 10px;
     font-size: 30px;
-    
 }
-@media screen and (max-width: 500px){
+#menu-movil li:nth-child(-n+2) {
+    /* Estilos que deseas aplicar a los dos primeros elementos */
+    border-right: 1px solid blue;
+}
+#loading{
+    display: block;
+    margin: 0 auto;
+    display: none;
+}
+
+
+/* Media query para tamaños de pantalla más pequeños donde quieres ocultar el h1 */
+@media screen and (max-width: 376px) {
     .barras-menu{
         display: block;
     }
-  
-    h1{
-        display: none;
+    h1 {
+        display: none; /* Oculta el h1 */
     }
     header{
         justify-content: space-around;
     }
-    .menu-movil{
+    .estilo-menu{
+        display: inline;
+    }
+    .menu-movil{ 
         display: none;
     }
+    #menu-movil li:nth-child(-n+2) {
+        /* Estilos que deseas aplicar a los dos primeros elementos */
+        border:none;
+    }
+    #containerpk article{
+        width: 100%;
+        
+
+
+    }
+
 }
