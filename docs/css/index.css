@@ -1,18 +1,6 @@
 #logo{
-    width: 150px;
+    width: 200px;
 }
-
-body {
-background-image: url(https://e7.pngegg.com/pngimages/567/42/png-clipart-fan-art-drawing-pokemon-go-pokemon-go-fauna-fictional-character.png);
-background-size: cover;
-background-position: center;
-
-
-}
-
-
-
-
 
 header{
     display: flex;
@@ -32,16 +20,12 @@ header{
 .estilo-menu a{
     text-decoration: none;
     display: block;
-    margin: 5px;
-    font-size: 20px;
-    font-style: italic;
-    font-weight: bold;
-    color: rgb(0, 255, 0);
+    margin: 10px;
+    font-size: 30px;
 }
 #menu-movil li:nth-child(-n+2) {
     /* Estilos que deseas aplicar a los dos primeros elementos */
-    border-right: 1px solid rgb(0, 255, 64);
-    border-width: 1px;
+    border-right: 1px solid blue;
 }
 #loading{
     display: block;
@@ -50,13 +34,12 @@ header{
 }
 #containerpk article{
     width: 20%;
-    border: 1px solid rgb(0, 255, 0);
+    border: 1px solid blue;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 5px;
-    background-color: aquamarine;
 }
 #containerpk{
     display: flex;
@@ -84,7 +67,7 @@ article img {
 }
 
 /* Media query para tamaños de pantalla más pequeños donde quieres ocultar el h1 */
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 576px) {
     .barras-menu{
         display: block;
     }
